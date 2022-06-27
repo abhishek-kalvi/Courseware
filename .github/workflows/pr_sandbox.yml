@@ -9,5 +9,11 @@ jobs:
   sandbox:
     runs-on: ubuntu-latest
     steps:
-      - name: Extract branch name
-        run: echo running on branch ${{ github.head_ref }}
+      - name: Add comment
+      - uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            ${{ github.head_ref }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: "github-actions[bot]" # The user.login for temporary GitHub tokens
+          allow-repeats: false # This is the default
