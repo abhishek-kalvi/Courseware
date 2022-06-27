@@ -6,23 +6,19 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Kalvi",
+  tagline: "Courseware",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "https://kalvieducation.com/assets/imgs/favicon.png",
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "Kalvi-Education", // Usually your GitHub org/user name.
-  projectName: "Courseware", // Usually your repo name.
+  organizationName: "Kalvi-Education",
+  projectName: "Courseware",
   trailingSlash: false,
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -58,23 +54,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "My Site",
+        title: "Kalvi courseware",
         logo: {
-          alt: "My Site Logo",
+          alt: "Kalvi logo",
           src: "img/logo.svg",
         },
         items: [
           {
             type: "doc",
-            docId: "intro",
+            label: "Courses",
             position: "left",
-            label: "Tutorial",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
-          {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
+            docId: "B Tech/index",
           },
         ],
       },
