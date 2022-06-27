@@ -2,7 +2,7 @@
   "name": "courseware",
   "version": "0.0.1",
   "private": true,
-  "homepage": "/courseware",
+  "homepage": "/Courseware",
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
