@@ -8,8 +8,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Kalvi",
   tagline: "Courseware",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/Courseware/",
+  url: "https://kalvi-education.github.io/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://kalvieducation.com/assets/imgs/favicon.png",
