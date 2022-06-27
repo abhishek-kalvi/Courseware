@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add comment
-      - uses: mshick/add-pr-comment@v1
+        uses: mshick/add-pr-comment@v1
         with:
           message: |
             ${{ github.head_ref }}
