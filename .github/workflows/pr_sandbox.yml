@@ -1,0 +1,14 @@
+name: Create sandbox for PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sandbox:
+    name: Create sandbox
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create sandbox
+        run: echo "Hello world"
