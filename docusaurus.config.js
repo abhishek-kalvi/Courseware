@@ -9,7 +9,7 @@ const config = {
   title: "Kalvi",
   tagline: "Courseware",
   url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  baseUrl: "/Courseware/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://kalvieducation.com/assets/imgs/favicon.png",
