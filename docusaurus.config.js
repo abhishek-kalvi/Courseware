@@ -9,7 +9,7 @@ const config = {
   title: "Kalvi",
   tagline: "Courseware",
   url: "https://kalvi-education.github.io/",
-  baseUrl: "/",
+  baseUrl: "/courseware",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "https://kalvieducation.com/assets/imgs/favicon.png",
@@ -21,7 +21,7 @@ const config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en"]
+    locales: ["en"],
   },
 
   presets: [
@@ -34,20 +34,20 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css")
-        }
-      })
-    ]
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      }),
+    ],
   ],
 
   themeConfig:
@@ -57,21 +57,21 @@ const config = {
         title: "Kalvi courseware",
         logo: {
           alt: "Kalvi logo",
-          src: "img/logo.svg"
+          src: "img/logo.svg",
         },
         items: [
           {
             type: "doc",
             label: "Courses",
             position: "left",
-            docId: "B Tech/index"
+            docId: "B Tech/index",
           },
           {
             label: "Contribute",
             position: "left",
-            href: "https://githubbox.com/Kalvi-Education/Courseware"
-          }
-        ]
+            href: "https://githubbox.com/Kalvi-Education/Courseware",
+          },
+        ],
       },
       footer: {
         style: "dark",
@@ -81,35 +81,35 @@ const config = {
             items: [
               {
                 label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus"
+                href: "https://stackoverflow.com/questions/tagged/docusaurus",
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus"
+                href: "https://discordapp.com/invite/docusaurus",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus"
-              }
-            ]
+                href: "https://twitter.com/docusaurus",
+              },
+            ],
           },
           {
             title: "More",
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus"
-              }
-            ]
-          }
+                href: "https://github.com/facebook/docusaurus",
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme
-      }
-    })
+        darkTheme: darkCodeTheme,
+      },
+    }),
 };
 
 module.exports = config;
