@@ -1,0 +1,19 @@
+name: Create sandbox for PR
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  sandbox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add comment
+        uses: mshick/add-pr-comment@v1
+        with:
+          message: |
+            [Live test](https://githubbox.com/Kalvi-Education/Courseware/tree/${{ github.head_ref }})
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token-user-login: "github-actions[bot]" # The user.login for temporary GitHub tokens
+          allow-repeats: false # This is the default
