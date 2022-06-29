@@ -1,5 +1,6 @@
 {
-  "template": "node",
+  "template": "docusaurus",
+  "hardReloadOnChange": true,
   "container": {
     "node": "16"
   }
