@@ -31,22 +31,25 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+          path: "course1",
+          routeBasePath: "course1",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
       }),
+    ],
+  ],
+
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "course2",
+        path: "course2",
+        routeBasePath: "course2",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
     ],
   ],
 
@@ -61,10 +64,20 @@ const config = {
         },
         items: [
           {
-            type: "doc",
+            type: "dropdown",
             label: "Courses",
             position: "left",
-            docId: "B Tech/index",
+            items: [
+              {
+                label: "Course1",
+                to: "/course1/docs",
+              },
+              {
+                label: "Course2",
+                to: "/course2/docs",
+              },
+              // ... more items
+            ],
           },
           {
             label: "Contribute",
