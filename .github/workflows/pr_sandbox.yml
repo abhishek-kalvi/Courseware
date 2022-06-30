@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add comment
+        permissions: write-all
         uses: mshick/add-pr-comment@v1
         with:
           message: |
