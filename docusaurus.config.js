@@ -4,6 +4,22 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+const parseSidebarItems = (items) => {
+  const result = items.map((item) => {
+    if (item.items && item.items.length > 0) {
+      item.items = parseSidebarItems(item.items);
+    }
+    let label = item.label;
+    if (!label) {
+      const generatedLabel = item.id.split("/");
+      label = generatedLabel[generatedLabel.length - 1];
+    }
+    item.label = label.replace(/-/g, " ");
+    return item;
+  });
+  return result;
+};
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Kalvi",
@@ -33,6 +49,13 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           path: "course1",
           routeBasePath: "course1",
+          async sidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+            return parseSidebarItems(sidebarItems);
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -49,6 +72,10 @@ const config = {
         path: "course2",
         routeBasePath: "course2",
         sidebarPath: require.resolve("./sidebars.js"),
+        async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          return parseSidebarItems(sidebarItems);
+        },
       },
     ],
   ],
