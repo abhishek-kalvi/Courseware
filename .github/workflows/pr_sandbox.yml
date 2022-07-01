@@ -13,7 +13,7 @@ jobs:
         uses: mshick/add-pr-comment@v1
         with:
           message: |
-            [Live test](https://githubbox.com/${{github.event.pull_request.head.repo.full_name}}/tree/${{ github.head_ref }})
+            [Live test](https://githubbox.com/test/tree/${{ github.head_ref }})
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: "github-actions[bot]" # The user.login for temporary GitHub tokens
           allow-repeats: false # This is the default
