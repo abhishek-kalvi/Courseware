@@ -1,7 +1,11 @@
 {
-  "template": "docusaurus",
+  "template": "create-react-app",
+  "infiniteLoopProtection": true,
+  "node": "16",
   "hardReloadOnChange": true,
+  "port": 3000,
   "container": {
-    "node": "16"
+    "node": "16",
+    "port": 3000
   }
 }
