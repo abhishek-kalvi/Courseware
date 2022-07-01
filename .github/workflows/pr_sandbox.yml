@@ -1,11 +1,9 @@
 name: Create sandbox for PR
 
 on:
-  pull_request:
+  [pull_request, pull_request_target]:
     branches:
       - main
-
-permissions: write-all
 
 jobs:
   sandbox:
