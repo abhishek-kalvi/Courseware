@@ -78,6 +78,19 @@ const config = {
         },
       },
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "Contribution-Guide",
+        path: "Contribution-Guide",
+        routeBasePath: "Contribution-Guide",
+        sidebarPath: require.resolve("./sidebars.js"),
+        async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          return parseSidebarItems(sidebarItems);
+        },
+      },
+    ],
   ],
 
   themeConfig:
@@ -103,12 +116,18 @@ const config = {
                 label: "Course2",
                 to: "/course2/docs",
               },
+
               // ... more items
             ],
           },
           {
+            label: "Contribution Guide",
+            to: "/Contribution-Guide/docs",
+            position: "right",
+          },
+          {
             label: "Contribute",
-            position: "left",
+            position: "right",
             href: "https://githubbox.com/Kalvi-Education/Courseware",
           },
         ],
