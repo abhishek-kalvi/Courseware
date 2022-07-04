@@ -37,7 +37,7 @@ const config = {
 
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en"]
   },
 
   presets: [
@@ -55,13 +55,13 @@ const config = {
           }) {
             const sidebarItems = await defaultSidebarItemsGenerator(args);
             return parseSidebarItems(sidebarItems);
-          },
+          }
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
-        },
-      }),
-    ],
+          customCss: require.resolve("./src/css/custom.css")
+        }
+      })
+    ]
   ],
 
   plugins: [
@@ -75,8 +75,8 @@ const config = {
         async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
           const sidebarItems = await defaultSidebarItemsGenerator(args);
           return parseSidebarItems(sidebarItems);
-        },
-      },
+        }
+      }
     ],
     [
       "@docusaurus/plugin-content-docs",
@@ -88,9 +88,22 @@ const config = {
         async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
           const sidebarItems = await defaultSidebarItemsGenerator(args);
           return parseSidebarItems(sidebarItems);
-        },
-      },
+        }
+      }
     ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "Semester-1",
+        path: "Semester-1",
+        routeBasePath: "Semester-1",
+        sidebarPath: require.resolve("./sidebars.js"),
+        async sidebarItemsGenerator({ defaultSidebarItemsGenerator, ...args }) {
+          const sidebarItems = await defaultSidebarItemsGenerator(args);
+          return parseSidebarItems(sidebarItems);
+        }
+      }
+    ]
   ],
 
   themeConfig:
@@ -100,7 +113,7 @@ const config = {
         title: "Kalvi courseware",
         logo: {
           alt: "Kalvi logo",
-          src: "img/logo.svg",
+          src: "img/logo.svg"
         },
         items: [
           {
@@ -110,27 +123,31 @@ const config = {
             items: [
               {
                 label: "Course1",
-                to: "/course1/docs",
+                to: "/course1/docs"
               },
               {
                 label: "Course2",
-                to: "/course2/docs",
+                to: "/course2/docs"
               },
+              {
+                label: "Semester-1",
+                to: "/Semester-1/docs"
+              }
 
               // ... more items
-            ],
+            ]
           },
           {
             label: "Contribution Guide",
             to: "/Contribution-Guide/docs",
-            position: "right",
+            position: "right"
           },
           {
             label: "Contribute",
             position: "right",
-            href: "https://githubbox.com/Kalvi-Education/Courseware",
-          },
-        ],
+            href: "https://githubbox.com/Kalvi-Education/Courseware"
+          }
+        ]
       },
       footer: {
         style: "dark",
@@ -140,35 +157,35 @@ const config = {
             items: [
               {
                 label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                href: "https://stackoverflow.com/questions/tagged/docusaurus"
               },
               {
                 label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                href: "https://discordapp.com/invite/docusaurus"
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
-            ],
+                href: "https://twitter.com/docusaurus"
+              }
+            ]
           },
           {
             title: "More",
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
+                href: "https://github.com/facebook/docusaurus"
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`
       },
       prism: {
         theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-    }),
+        darkTheme: darkCodeTheme
+      }
+    })
 };
 
 module.exports = config;

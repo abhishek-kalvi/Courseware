@@ -1,0 +1,150 @@
+Welcome to the lesson on Front-end web development. This would be a self-paced class which focuses on one of the fundamental topics in HTML - Text Fundamentals. Please make sure that you are completing the entire lesson.
+
+  
+  
+
+# HTML Text Fundamentals
+
+### What are your learning goals in this lesson
+
+Goal 1: Headings and paragraphs in HTML
+
+Goal 2: HTML List
+
+Goal 3: Emphasis and importance in HTML
+
+### What are HTML Text Fundamentals?
+
+As described by [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals): “One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.”
+
+  
+
+### Why do we need structure in HTML?
+
+Here is a [link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#why_do_we_need_structure) which helps you understand why we need structure.
+
+  
+
+### Why do we need semantics?
+
+Here is a [link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#why_do_we_need_structure) which helps you understand why we need structure.
+
+  
+
+Now that we have established the need for structuring, let’s dive deep into how to do that.
+
+  
+
+## Headings and paragraphs in HTML:
+
+As described in [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#the_basics_headings_and_paragraphs): “Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc.
+
+  
+
+![](https://lh4.googleusercontent.com/9ybD2oLIcVkljWCDSI-OnCyyaY6WrlfqlS7LHRl9DFALhppG8XvasZHIRaYH8BEyzI4znGGXNK0lTAjXOrc5roqTY3SfcdRISgM_y3_jCv5GpDaP6FfAMhZqzbhK_PvrcOk0t7y5Ozdl93HKVA)
+
+Source: [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals/newspaper_small.jpg)
+
+  
+
+Structured content makes the reading experience easier and more enjoyable.
+
+  
+
+In HTML, each paragraph has to be wrapped in a <p> element, like so:
+
+  
+
+    <p>I am a paragraph, oh yes I am.</p>
+
+  
+
+Each heading has to be wrapped in a heading element:
+
+  
+
+    <h1>I am the title of the story.</h1>
+
+  
+
+There are six heading elements: `<h1>, <h2>, <h3>, <h4>, <h5>, and <h6>`. Each element represents a different level of content in the document; `<h1>` represents the main heading, `<h2>` represents subheadings, `<h3>` represents sub-subheadings, and so on.”
+
+  
+
+Here is a [link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#implementing_structural_hierarchy) which will help you understand Implementing structural hierarchy.
+
+Here are some useful links on how to create headings.
+
+[Click here](https://youtu.be/H519o8BvpQA) to watch a video on HTML heading tag (4 minutes)
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/headline-with-the-h2-element) to learn & practice HTML heading tag (2 minutes)
+
+Here are some useful links on how to create paragraphs.
+
+[Click here](https://youtu.be/H519o8BvpQA) to watch a video on HTML paragraph tag (5 minutes)
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/inform-with-the-paragraph-element) to learn & practice HTML paragraph tag (2 minutes)
+
+  
+  
+
+## HTML List:
+![List Gif image](https://media3.giphy.com/media/B7o99rIuystY4/giphy.gif?cid=ecf05e47oimf46d3bb6wj5l382xl5wuf6z7yzf19gfkz5okh&rid=giphy.gif&ct=g)
+As described by [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#lists): “Lists are everywhere in life—from your shopping list to the list of directions you subconsciously follow to get to your house every day, to the lists of instructions you are following in these tutorials! Lists are everywhere on the web, too, and we've got three different types to worry about.”
+
+  
+
+Here is a [link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#lists) which will help you understand different types of lists in HTML. please go through the section “[Unordered list](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#unordered)”, “[Ordered list](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#ordered)” & “[nesting list](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#nesting_lists)”.
+
+  
+
+Here are a few resources on how to create lists.
+
+  
+
+[Click here](https://www.youtube.com/watch?v=kUMe1FH4CHE&t=2985s) to watch a video on lists (watch from 00:49:00 to 00:59:00) (10 minutes)
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/create-a-bulleted-unordered-list) to learn & practice unordered list (3 minutes)
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/create-an-ordered-list) to learn & practice ordered list (3 minutes)
+
+  
+
+## Emphasis and importance in HTML
+
+As described by [MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#emphasis_and_importance): “In human language, we often emphasize certain words to alter the meaning of a sentence, and we often want to mark certain words as important or different in some way. HTML provides various semantic elements to allow us to mark up textual content with such effects, and in this section, we'll look at a few of the most common ones.”
+
+  
+
+Here is a [link](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#emphasis_and_importance) which will help you understand Emphasis and importance in HTML. please go through the section “[Emphasis](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#emphasis)”, “[Strong importance](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#strong_importance)” & “[Italic, bold, underline](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals#italic_bold_underline)”.
+
+  
+  
+
+Voila, that’s the end of all the concepts in this lesson. Now, time for an exercise!
+
+# Instructions for the exercise
+
+Here is the Boilerplate link for the [exercise](https://stackblitz.com/edit/web-platform-g1nokm?file=index.html): 
+
+**How to work with exercise**
+This exercise has 6 iterations. You are expected to complete the iterations in increasing order. For example, you will have to complete the first iteration before starting the second iteration, and so on. You can find the instructions for completing the iterations in the boilerplate file as comments.
+
+  
+# Useful resources for you
+
+Now that you’re done with this lesson, here are some useful post-class reading links for you.
+
+[https://www.w3schools.com/html/html_headings.asp](https://www.w3schools.com/html/html_headings.asp)
+
+[https://www.w3schools.com/tags/tag_p.asp](https://www.w3schools.com/tags/tag_p.asp)
+
+[https://www.w3schools.com/tags/tag_em.asp](https://www.w3schools.com/tags/tag_em.asp)
+
+[https://www.w3schools.com/html/html_lists.asp](https://www.w3schools.com/html/html_lists.asp)
+
+[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)
+
+  
+
+
