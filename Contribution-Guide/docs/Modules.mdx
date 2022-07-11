@@ -19,7 +19,7 @@
 
 ### Result
 
-![Kalvi Logo](/sample-lesson/kalvi-logo.png)
+![Kalvi Logo](assets/kalvi-logo.png)
 
 ## Collapsible
 
@@ -45,3 +45,51 @@
     This is some content
 
 </details>
+
+## Docs Viewer
+
+### Steps
+
+1. Import the DocsViewer component at the top of the file using:
+
+```tsx
+import DocsViewer from "@site/src/components/DocsViewer";
+```
+
+2. Use the component as follows:
+
+```tsx
+<DocsViewer toc={toc} src="<Google Docs ID/ PDF URL>" />
+```
+
+### Example
+
+_Passing in a Google Docs ID_
+
+```tsx
+<DocsViewer toc={toc} src="1Gp5MINDu_HL-zOoRL0Di7JbDJpMe9EtnP-a8dmNbemQ" />
+```
+
+_Passing in a PDF_
+
+```tsx
+<DocsViewer
+  toc={toc}
+  src="https://www.unicef.org/media/122921/file/State%20of%20Learning%20Poverty%202022.pdf"
+/>
+```
+
+### Result
+
+import DocsViewer from "@site/src/components/DocsViewer";
+
+_Google Docs_
+
+<DocsViewer toc={toc} src="1Gp5MINDu_HL-zOoRL0Di7JbDJpMe9EtnP-a8dmNbemQ" />
+
+_PDF_
+
+<DocsViewer
+  toc={toc}
+  src="https://www.unicef.org/media/122921/file/State%20of%20Learning%20Poverty%202022.pdf"
+/>
