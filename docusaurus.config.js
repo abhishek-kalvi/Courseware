@@ -113,7 +113,7 @@ const config = {
         title: "Kalvi courseware",
         logo: {
           alt: "Kalvi logo",
-          src: "img/logo.svg"
+          src: "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/img/logo.svg"
         },
         items: [
           {
