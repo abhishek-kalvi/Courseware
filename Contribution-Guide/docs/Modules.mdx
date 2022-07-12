@@ -4,17 +4,17 @@
 
 ### Steps
 
-1. Create a folder for your lesson in `/static`
+1. Create a folder for your course in `/assets`
 2. Import the image using the following syntax:
 
 ```md
-    ![<alt>](/<folder_name>/<file_name>)
+    ![<alt>](assets/<file_name>)
 ```
 
 ### Example
 
 ```md
-    ![Kalvi Logo](/sample-lesson/kalvi-logo.png)
+    ![Kalvi Logo](assets/kalvi-logo.png)
 ```
 
 ### Result
@@ -59,15 +59,18 @@ import DocsViewer from "@site/src/components/DocsViewer";
 2. Use the component as follows:
 
 ```tsx
-<DocsViewer toc={toc} src="<Google Docs ID/ PDF URL>" />
+<DocsViewer toc={toc} src="<Google Docs/ PDF URL>" />
 ```
 
 ### Example
 
-_Passing in a Google Docs ID_
+_Passing in a Google Docs/ Slides/ Sheets URL_
 
 ```tsx
-<DocsViewer toc={toc} src="1Gp5MINDu_HL-zOoRL0Di7JbDJpMe9EtnP-a8dmNbemQ" />
+<DocsViewer
+  toc={toc}
+  src="https://docs.google.com/document/d/1Gp5MINDu_HL-zOoRL0Di7JbDJpMe9EtnP-a8dmNbemQ/edit"
+/>
 ```
 
 _Passing in a PDF_
@@ -85,7 +88,10 @@ import DocsViewer from "@site/src/components/DocsViewer";
 
 _Google Docs_
 
-<DocsViewer toc={toc} src="1Gp5MINDu_HL-zOoRL0Di7JbDJpMe9EtnP-a8dmNbemQ" />
+<DocsViewer
+  toc={toc}
+  src="https://docs.google.com/document/d/1Gp5MINDu_HL-zOoRL0Di7JbDJpMe9EtnP-a8dmNbemQ/edit"
+/>
 
 _PDF_
 
@@ -93,3 +99,7 @@ _PDF_
   toc={toc}
   src="https://www.unicef.org/media/122921/file/State%20of%20Learning%20Poverty%202022.pdf"
 />
+
+### Notes
+
+Passing in the `toc={toc}` option automatically detects if there is other content on the page. If not, the docs viewer takes up the whole page.
