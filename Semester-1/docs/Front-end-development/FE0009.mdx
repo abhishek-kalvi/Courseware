@@ -1,0 +1,161 @@
+Welcome to the lesson on Front-end web development. This would be a **self-paced class** that focuses on _Creating Hyperlinks_. Please make sure that you are completing the entire lesson.
+
+
+## Hyperlinks
+
+
+### What are Hyperlinks?
+
+MDN describes “Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL).”
+
+[Click here](https://www.youtube.com/watch?v=pQN-pnXPaVg&t=3556s) to watch a video on hyperlinks (watch from 00:59:16 to 01:07:33)                        (8 minutes)
+
+[Content: Definition of the hyperlink and a few examples to create hyperlink]
+
+A hyperlink need not be a text, it can also be images or any other HTML element.
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/turn-an-image-into-a-link) to learn & practice “turn an image into a link”.
+
+Now, Since you now know what a hyperlink does let's move forward and learn how to create one.
+
+
+### Hyperlinks Syntax
+
+HTML links are defined within &lt;a> tag. It follows the syntax :
+
+
+```
+<a href="URL"> link text </a>
+```
+
+
+The href attribute inside the anchor tag indicates the link destination. Additional attributes like the title can also be put inside the anchor tag. In the below example clicking the link will redirect us to google and when we hover over the link the title will appear as the tooltip:
+
+
+```
+<a href="https://www.google.co.in/" title="I am Google">Google</a>
+```
+
+
+By default any hyperlink will appear as the following in any browser:
+
+
+
+* Unvisited: Underlined and blue
+* Visited: Underline and purple
+* Active: Underline and red
+
+Note: You can always change the properties and style of the hyperlinks using CSS.
+
+Hyperlinks also have a target attribute. By default when you click on any hyperlink it will open in the same browser window. With the target attribute, you can change this and make the hyperlink redirect us to a new window or tab. It can have the following values : 
+
+
+
+* _self: Opens the link in the same window/tab
+* _blank: Opens the link in a new window/tab
+* _parent: Opens the document in the parent frame
+* _top: Opens the document in the full window body
+
+    ```
+<a href="https://www.google.co.in/" title="I am Google" target="_blank">Google</a>
+```
+
+
+
+Great!!
+
+You now know how to create a hyperlink, but which path should you provide in the href attribute. Let’s dive deeper to understand URLs and paths to use hyperlinks in the best way.
+
+
+### Brief on URLs and Path: 
+
+To fully understand hyperlinks you need to understand file paths and URLs.
+
+MDN tells you that URL( Uniform Resource Locator ) is a string of text that uses the path to find the file's location.
+
+
+
+* Same directory: If you want to include the file from the same directory as your working directory, you can specify the file name.
+* Moving down into subdirectories: If you want to include the file from the subdirectories you need to go into it using the forward-slash( / ) command.
+* Moving up the parent directory: If you want to include files from the parent directory you can move up using two dots( .. )
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/link-to-external-pages-with-anchor-elements) to learn & practice “link to external pages with anchor elements” (2 minutes)
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/link-to-internal-sections-of-a-page-with-anchor-elements) to learn & practice “link to internal sections of a page with anchor elements” (2 minutes)
+
+
+### Hyperlinks Best Practices
+
+According to MDN, there are few things which you need to keep in mind while creating a hyperlink.
+
+
+
+* _Wording used should be clear_: It is very easy to attach a link but the link should be readable. The user should be able to know where the link is redirecting just by looking at the text of the link.
+
+    ```
+    <a href="https://www.facebook.com/ ">Facebook</a>
+    ```
+
+
+* _If you are linking to non-HTML resources then leave clear signposts_: If you are linking any document which will be downloaded or streamed you should add a signpost so that the user would be able to know that.
+* _When you are linking to a download use the download attribute._
+
+So far you have learned many things about HTML links but do you know that you can also send emails via Hyperlinks. Let us now look into how we could do that.
+
+	
+
+
+### E-mail using Hyperlinks: 
+
+While a link or button can be used to redirect us to a new page or resource, we can also use it to send an email message. This can be done using &lt;a> element and a mailto property.
+
+
+```
+<a href="mailto: nowhere@xyz.org"> Send mail to Nowhere</a>
+```
+
+
+In addition to the email address you can provide other information like subject,cc and bcc. Here is an example : 
+
+
+```
+<a href="mailto : nowhere@pqr.org?cc=xyz@gmail.com&bcc=abc@gmail.com&subject=The%20subject%20of%20the%20mail&body=The%20body%20of%20the%20mail"> Send mail with subject, cc, bcc, body</a>
+```
+
+
+[Click here](https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/nest-an-anchor-element-within-a-paragraph) to learn & practise “nest an anchor element within a paragraph” (2 minutes)
+
+
+## Instructions for the exercise
+
+And voila, that’s the end of all the concepts in this lesson. Now, time for exercise!
+
+**Required links**
+
+Boilerplate link: [Exercise Boilerplate link](https://stackblitz.com/edit/web-platform-eamxjn?file=index.html) 
+
+**Setting up a coding environment for the exercise**
+
+**Step 1:** Open the boilerplate link and download the boilerplate code to your computer.
+
+**Step 2: **Open the folder, which has the boilerplate code, using VS code.
+
+**How to work with exercise**
+
+Every exercise will have an n-number of iterations. You are expected to complete the iterations in increasing order.
+
+For example, you will have to complete the first iteration before starting the second iteration, and so on.
+
+You can find the instructions for completing the iterations here below as well as in the boilerplate file in which you will be working as comments.
+
+
+## Useful resources for you
+
+Now that you’re done with this lesson, here are some useful post-class reading links for you.
+
+[https://www.geeksforgeeks.org/html-links/](https://www.geeksforgeeks.org/html-links/) 
+
+[https://www.w3schools.com/html/html_links.asp](https://www.w3schools.com/html/html_links.asp) 
+
+[https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks) 
+
