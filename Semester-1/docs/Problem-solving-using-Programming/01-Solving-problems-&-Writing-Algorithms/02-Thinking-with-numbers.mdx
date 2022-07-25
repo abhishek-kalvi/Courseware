@@ -226,10 +226,9 @@ Look at the digits from the upper half and lower half as 3 digit numbers. Eg: fi
 ### 3. KenKen Puzzles
 
 We will be looking at some special puzzle games in this section. We have already previously talked about the importance of quickness in using basic arithmetic operations. Well, KenKen puzzles test just that particular ability.
-
   
 
-*Problem Statement:* Here, we are given a grid of size 4x4 and it has been divided into highly outlined areas as we can see.
+**Problem Statement:** Here, we are given a grid of size 4x4 and it has been divided into highly outlined areas as we can see.
 
 -   These heavily outlined areas are called “cages”
     
@@ -252,32 +251,26 @@ We will be looking at some special puzzle games in this section. We have already
   
   
 
-*Approach to KenKen puzzles*
+**Approach to KenKen puzzles**
+
+  
+These puzzles will help us in making **decisions in a constrained manner** which is very helpful while solving problems. Here, you can’t use a number more than once in a row or column.(It's like a sudoku!) Similarly, while solving coding problems you might be constrained to not use some tools by an interviewer in an interview. 
 
   
 
-These puzzles will help us in making decisions in a constrained manner which is very helpful while solving problems. Here, you can’t use a number more than once in a row or column. Similarly, while solving coding problems you might be constrained to not use some tools by an interviewer in an interview.
+>_Step 1:_ In the puzzle we can see that, first of all we see that there are two cages with only one cell and they can only have one number i.e. 3 and 1. Take this as the starting point, and move forward with the consideration fix 3 and 1 there. Hence we can’t use 3 in the 2nd row and 2nd column and 1 in the 4th row and 1st column. 
 
   
 
-In the puzzle we can see that, first of all we see that there are two cages with only one cell and they can only have one number i.e. 3 and 1. Take this as the starting point, and move forward with the consideration that we can’t use 3 in the 2nd row and 2nd column row and 1 in the last row and first column.
+>_Step 2:_ Now, we just have to consider the possible combinations of numbers that can work by keeping the constraints in mind. For example, in the top left most cage, we have 1-, the possible combinations that can achieve this result are 1,2(X); 2,1; 2,3(X); 3,4; 4,3(X). The combinations marked with X are not possible due to the constraints we obtained by filling the initial unit cells.
+
+>_Step 3:_ We can see that we’re left with two possible combinations 2,1 and 3,4. Now, again we take 3,4 and fill the box, we see that we are only left with 2 and 4 for the first row. 
+
+>_Step 4:_ This is a problem, because we have to fill the middle-left cage with 1- which is not possible with 2 and 4. Hence, we have reached the only possible combination for the top-left cage i.e. 2,1. Similarly, we can use the already filled cells to fill the cells that are empty. Remember, **the process of elimination of possibilities** is the key here.
 
   
 
->Now, we just have to consider the possible combinations of numbers that can work by keeping the constraints in mind.
-
-For example, in the top left most cage, we have 1-, the possible combinations that can achieve this result are 1,2(X); 2,1; 2,3(X); 3,4; 4,3(X).
-
-The combinations marked with X are not possible due to the constraints we obtained by filling the initial unit cells.
-
-The possible combinations are 2,1; 3,4. Now, again we take 3,4 and fill the box, we see that we are only left with 2 and 4 for the first row.
-
-
->And, this is a problem, because we have to fill the middle-left cage with 1- which is not possible with 2 and 4. Hence, we have reached the only possible combination for the top-left cage i.e. 2,1. Similarly, we can use the already filled cells to fill the cells that are empty. Remember, the process of elimination of possibilities is the key here.
-
-  
-
-*Complete Solution:*
+**Complete Solution:**
 
 ![](https://lh6.googleusercontent.com/stnRvgDr3mNWUKq9BxxClj4gicJDCauiWffzdWmrp9nY_ZBVRAIIOZ7TlngoUmVquWLHcRynk6qCXiRQgZeyaGYP79nNKzKFspmOyjq_w-8XT5rg_h7n1NfZj9VCk1ON4seAOnon83BN6dP6iA)
   
@@ -290,13 +283,13 @@ The possible combinations are 2,1; 3,4. Now, again we take 3,4 and fill the box,
   
   
 
-*Follow Up*
+**Follow Up**
 
 You can try to solve more of these puzzles and if you are still stuck, try solving KenKen Puzzles of size 3x3 online and then using the experience you will be able to solve the harder 4x4 puzzles.
 
   
 
-*Solve the given KenKen puzzle:* 
+**Solve the given KenKen puzzle:**
 
 ![](https://lh3.googleusercontent.com/ThI0pyhqbWeZrf4z9TOs1vO3vDoE5H77A7s9NyLOiQVmmpQEE6HErVg24ZusTVpfSOzIGTGPXhYZc9N5EOaTcp5_y3O-bP_s_rAcq-QF5DVAutFqD11hI6Orn4R8zeGZTkparm1u8bCHGCcu9Q)
 
@@ -310,14 +303,17 @@ You can try to solve more of these puzzles and if you are still stuck, try solvi
 
 Q1: In the Match Stick Magic challenge, which two digit number can be formed with the help of sticks from digit 9?
 
-1.  41
+A.  41
     
-2.  22
+B.  22
     
-3.  14
+C.  14
     
-4.  (a) & (b) both [✔]
-    
+D.  (a) & (b) both 
+
+Answer: Option D
+
+LU Measured: Problem solving    
 
   
 
@@ -333,15 +329,18 @@ Q2: Find the number that will come in place of the question mark.
   
   
 
-1.  51 [✔]
+A.  51 
     
-2.  22
+B.  22
     
-3.  12
+C.  12
     
-4.  54
+D.  54
     
 
+Ans: Option A
+
+LU Measured: Problem solving
   
 
 Q3: Find the digit that will come in place of the question mark in the following KenKen puzzle![](https://lh4.googleusercontent.com/MJAEJ2P5JfTWOi7JlZOlAiw8fUF6_cjZBHS8FLDVuzCqZWnRHQ5UkON7lN7Slla4z35AO754MV3yNus84Z53w7Kadd3efa9PUs6y2E2mZf-dQmIP9mV_9ALc6f9Fq_IlGhXX8TC0y6ZnMxN2yw)
@@ -358,12 +357,15 @@ Q3: Find the digit that will come in place of the question mark in the following
   
   
 
-1.  1
+A.  1
     
-2.  3 [✔]
+B.  3 
     
-3.  2
+C.  2
     
-4.  4
+D.  4
 
+Ans: Option B
+
+LU Measured: Problem solving
 
