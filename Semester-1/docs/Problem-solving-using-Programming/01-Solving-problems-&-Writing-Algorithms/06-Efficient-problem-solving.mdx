@@ -2,383 +2,436 @@
 
 ## Lesson Objective
 
-In this lesson we will be dealing with the structured way of approaching a Programming Question and solving it efficiently. We will learn about the various methodologies and techniques used to get the right approach towards solving a question by simply discussing a problem of getting the shortest path in the puzzle.
+In this lesson we will be dealing with a structured way of approaching programming questions and solving them efficiently. We will learn about the various methodologies and techniques used to get the right approach towards solving a question by simply discussing a problem of getting the shortest path in the puzzle.
 
   
 
-## Why should we solve a problem effeciently?
+## Why do we need to solve a problem efficiently?
 
-As we know that in today's world there are so many computer softwares that helps us in getting our task done in an instant of time. So have you ever imagined that if these programs that had made up the software were just based on brute force approach then what would have happened.I’ll tell you, if these programs were not made efficiently then our software might have taken years to complete the task which could be done within seconds.
+Today's world has countless computer softwares that help us in getting any task done in an instant. They are made up of many small and big programs that come together to make up the software. Have you ever wondered what these programs would be and how they all connected to one another? Our general thinking when facing a problem is often based on the brute force approach. A software written using the brute force approach would take minutes to hours, to complete a simple task which can be done in seconds.
+
+  
+
+Remember :bulb: Solving a programming problem efficiently is much more important rather than just solving it. Our aim should be achieving the goal with efficiency rather than simply achieving it any way possible.
 
   
 
-So Solving a Programming problem efficiently is much more important rather than just solving it.As it might not help us to achieve our goal for which we were aiming for.
-
-  
+💭 :thought_balloon: What is the difference between efficiency and effectiveness?
 
 ## Introduction to the Lesson
 
-**Today, we will be working on three topics:**
+Today, we will be working on three topics:
 
   
 
-1.  Cut hive Puzzle
+1.  Cut Hive Puzzles
     
-2.  Algorithmic Pattern
+2.  Algorithmic Patterns
     
-3.  Bakuro Puzzle
+3.  Bakuro Puzzles
     
 
   
 
->All these topics will help you to understand the concept of efficient problem solving and will make our concepts crystal clear in an amazing way.
+All these topics will help you to understand the concept of efficient problem solving and make thinking about these topics fun and interesting.
+
+Let’s run and try some crazy fun puzzles now!
+
+  
+
+![](https://media3.giphy.com/media/10frqodBZhy0Zq/giphy.gif?cid=ecf05e47dgxr4kwxnqpoflym2nseoecrozhe5zakwlfpaf27&rid=giphy.gif&ct=g)
+
+  
+
+Source: [scooby doo running GIF - Find & Share on GIPHY](https://giphy.com/gifs/scooby-doo-10frqodBZhy0Zq)
+
+## Cut  Hive Puzzles
+    
+
+These puzzles are inspired by the ‘Cut block’ puzzles that originate in Japan.
+
+As the name suggests, Cut Hive Puzzles consist of a block of hexagons i.e. the ‘hive’, with different areas segregated and marked out using bold lines.
+
+  
+
+💬:speech_balloon: The word area(s) will be used repetitively in the following explanation and it refers to any collection of one or more hexagons that are outlined with thick bold lines.
+
+  
+
+>The following figure shows an example of a cut hive problem:
+
+  
+
+![](https://lh6.googleusercontent.com/Q9Ey-lqVlBenXraT4sOtqRcYyioyRFwdibl23JmEjTAaqoVfVMV3QyQ6zF8IJCNCggjpwexs4544NQw1IuJHtjpyHZsGXAQypy8zSL33t-Jr5Axwq1MGsM-Tvep7cdRxLutKgKyP8H0Zwth_y26Fow)
+
+  
+
+>There are two important rules required to successfully solve this type of puzzle:
+
+  
+
+**Rule 1:** Each area must contain numbers from 1 up to the number N, where N is the total number of hexagons in the area.
+
+For example, the topmost area in the puzzle above consists of 4 hexagons so those hexagons must be filled with the numbers: 1, 2, 3 and 4 with no repetition in the numbers.
+
+If the bolded area has two hexagons (observe bottom left in the figure above) then it must be filled with the numbers 1 and 2.
+
+  
+
+**Rule 2:** No two hexagons can be filled with the same number if they share an edge along any direction. Therefore, in the grid below above since there is a 4 in the middle hexagon implies that there cannot be a 4 in any of the 5 hexagons surrounding it that share a common edge.
+
+  
+
+**Problem Statement:** Complete the following cut hive problem  without violating the rules:
+
+  
+
+![](https://lh5.googleusercontent.com/R-5HSn0yt1NZ4gH7MWV_bzNdis-J7TzQj8yTEL68Nrr0VN5W1N8S5hZivBA6gYES-ywGaIAW6diI7iZggBtgYB6n9rlvHhGn_iYm-JSnuAkrEb_u-eddax3-PwIjUHG9j9Z3V4I9Wnl-qkavR4vuzg)
+
+  
+
+**Approach**
+
+**Step 1:** The first and most basic approach is to select an area of hexagons enclosed in the bold lines and strictly apply rule 1 to fill numbers into the hexagons of the selected area. Make sure that you don’t violate rule 1 during this process before you move onto the next step.
+
+  
+  
+
+**Step 2:** The next step is to do the same for all the other separate areas one by one.
+
+  
+
+**Step 3:** In this step you have to apply rule 2. Pick out a hexagon from a selected bold area and check if that hexagon shares an edge with another hexagon containing the same number. Do this for all hexagons and if this condition arises, swap that number with another number of a hexagon in the same area.
+
+  
+
+**Step 4:** Check whether the numbers on hexagons sharing the edges are still same or not. If they remain the same then swap it with another number. Do this until all the hexagons of the given area do not share the same number with any of the hexagons which are sharing an edge with it.
+
+  
+
+>After performing these operations on all the areas we will get the desired result without violating any rules.
+
+  
+
+**Alternative Efficient Approach:**
+
+**Step 1:** Choose a hexagon which has already been filled with a number. Now place different numbers on the hexagons that share each of the six edges of the chosen hexagon. In doing so, place each number such that it is in compliance with rule 2 as discussed above.
+
+  
+
+>Perform step 1 on all pre-filled hexagons before moving on to step 2.
+
+  
+
+**Step 2:** Now start filling out the hexagons of a given area with numbers from 1 to X where X is the total number of hexagons of that area such that they are in compliance with rule 2 discussed above.
+
+  
+
+>Both the above methods will guide you to the same solution which is shown below:
+
+  
+
+![](https://lh4.googleusercontent.com/DY-N19r2p8YrrXJDdch3BLDZ8JfFRjA5tELvowYTUF3IKWkKum9O6A17uu2g-zhoYxEY9iccbU4xjfbhCdWcTqdI4k8fURkNKSnooyNF3vYAYYDBVQSimdPoocIK2Nmqk0WEBcvLJhfu1J_yZn5whQ)
+
+  
+
+**Follow up questions:**
+
+  
+
+Attempt the following Cut Hive puzzles. You are given the solution after each question to help you cross-check your answers and rectify any mistakes.
+
+  
+
+**Question 1:**
+
+![](https://lh5.googleusercontent.com/lLs-txMvJ2pjqBPt0TbwGuAqajkmBXyfX3GT-vlx3V-Nxvv4ryVvQzj686QRdCkHSnkakDnMDgISP5wjbXprj-4ZiuwVzHsfaLxN31Y56VJ8ms66NM6LOFtv2xc7Dpqo9fpG5IifwGoIPPqQkr1QpA)
+
+[Check the Solution!](https://lh4.googleusercontent.com/S7pU42CBQYDMffKrCId8p8zr0wiXInWroKToS37_5nY1YWSuLdV-ZkivxJxGGNzdK5wO0iEfJkI-SWcahsnyAfZ_7JomxcVHqRAsS73Knd5rxaSbdanPABs66UrdxtsXYs6ODq2eiBVneiqCDN1Ppok)
+
+**Question 2:**
+  
+
+![](https://lh4.googleusercontent.com/4dE3NPe4mcYKRCoocntM8JkkETBSvZn7_pXQXXzFbucHVkQEyyUTJtKNv-nrUsyrtBFvzhH-9FayRH6LSPb9I843yFEIQBvovubZLbW4zAHiX30z0ZfHTtzWQqJVD0Fq-XZL6h50TsdY9nV0ON5hXA)
+
+  
+  
+
+[Check the Solution!](https://lh5.googleusercontent.com/HExlCkUfQbsPuggWLMYMvHMb5-qopgnKKUefVwOD31LMtRT7K5jpHVDgU2OOmBqZ7qWalH-KO7a-eLHz5-6RL9eu-BhSxTYJ5h2jzac1zj5t7Db_69SfiHVzdLqDTI5Lmr0Hr1lyZ06o6an9vVgQHj4)
 
   
   
   
   
-  
-  
-  
-## 1. Cut  Hive  Puzzle
 
-## These are the Puzzles which are inspired by ‘Cut block’ Puzzles of japan.
+**Question 3:**
 
-The Cut Hive Puzzles consists of a block of hexagons,the ‘hive’,with different areas marked out using thicker lines.
+![](https://lh5.googleusercontent.com/_0XcDpbK_E6luYvxutQWkdg3Uq8GgaSxahb0PQ6ZK60RVK0F1rz8fSqlhAJpYa5w6P5Moz1AJZ610FfUgyE2KXRxw6iyiBt-NYIT1eiBDmbfo_tCAFIsGsoYvJo-5_d4Xpx_G5dwDPKvVZ6azxSsRA)
 
   
 
->A figure shows an example of cut hive problem:
+[Check the Solution!](https://lh6.googleusercontent.com/pwfulDZsAh3Pjf8stERBB06-kPfHF3TaZ3tQugU10LaajFYFocWxwSPEiLHjhzyqLnJq6Fg1tUqL05hYWnzLTfhC7SQedbd27tnygC7L4PTAHLG6OB64a1uEio3TVr-GZLsKQvtn4Z-3Bad3zyiy-io)
 
   
 
-![](https://lh5.googleusercontent.com/euDKi0jjdxyIfk1WqPd0tAFWiFg973An8vY76fTAvvspzK2IhbnpAt1y0aGDtJi_xQWp9uDGdNotjCqlNdhwM5gKbQVhpanEps8uaWqWkkLoqYoEh-ezPpZkt4T1JUVOnycRQBX6pCGJ-6dsjQ)
-
->There are basically two rules for solving this puzzle:
+Try exploring more such puzzles that are so widely available online. It develops your patience for trial and error that you may encounter when you face errors in your codes in the future.
 
   
 
-**Rule 1:** Each area must contain numbers from 1 up to the number N, where N is the total number of hexagons in the area.For example, the topmost area in the puzzle below consists of 4 hexagons so those hexagons must be filled with the numbers: 1, 2, 3 and 4 with no repeated numbers. If the area has two hexagons, like the one bottom left below, then it must be filled with the numbers 1 and 2.
-
-**Rule 2:** No number can be next to the same number in any direction, along a shared edge. So in the grid below, the fact that there is a 4 in the middle means there cannot be a 4 in any of the 5 hexagons surrounding it.
+![Mental Health GIF by mtv - Find & Share on GIPHY](https://media0.giphy.com/media/wYQLDWPoddIyM0AolF/giphy.gif?cid=790b7611b32a69875156e897892099212436a673575c4119&rid=giphy.gif&ct=g)
 
   
 
-**Problem Statement**: Complete the following cut hive problem  without violating the rules:
+Source: [Mental Health GIF by mtv](https://giphy.com/gifs/mtv-nike-jordans-each-step-forward-is-enough-wYQLDWPoddIyM0AolF)
 
   
 
-![](https://lh4.googleusercontent.com/yU5tZOEpWGXnNzH2v-HrYhVJmZFp98fumiwQHW-dCGCTzUAaQcpFW9fjZyf9S7AD0m-4hlpPifaXeChjwvqVglT7fjLiaAB1AW1DksatNbLxF1FwCQdZXMMe8l33L2v2nO7NVL_h3mjKEegLFg)
+## Search Algorithm- Algorithmic patterns
+    
 
   
 
-**Approach** Now to solve this problem the first basic thing that a person should do here is to focus on only one area and start filling the numbers on the hexagon of that area without violating rule number 1.
+In this topic we will be learning techniques on how to develop the most efficient algorithm for a problem by solving some interesting puzzles to keep your brain running.
 
-  
-
-After filling out the numbers in the hexagons of a given area check out whether any hexagon of this given area is having the same number in it which is placed in the hexagon of another area and is sharing it’s edge with it.
-
-  
-
-If this condition arises then swap this number with another number of the hexagon of the same area and then check whether the numbers on hexagons sharing the edges are still same or not if they are again same then swap it with another number do this until all the hexagons of the given area do not share the same number with the hexagons which are sharing it’s edge with it.
-
-  
-
->After performing these operations on all the areas we will get our desired result without violating any rule.
-
-  
-
-**Another Efficient Approach** First choose a hexagon in which the number is already placed. After choosing it, place different numbers on the hexagons which are sharing it’s edge with it such that each number which is stored in the hexagon is different with the hexagon to which it is sharing it’s edge.
-
-  
-
-Do this process to every hexagon which was initially having the numbers stored in it.After this start filling out the hexagons of a given area with numbers from 1 to X where X is the total number of hexagons of that area such that no two hexagons which are sharing it’s edge is having same number.
-
-  
-
-In this manner the question is solved and the solution looks like this:
-
-  
-
-![](https://lh6.googleusercontent.com/ETWiSqLcKefJJsVgDoBuicKmVkDosTn-AkdP7ud_pX-MIbN9uffvJgCId8DKPgC-aBOB-cO9_2tOLl1QFFDjQuaZ5-V6k6Ke10VjuPAP1f0NkCkYMoWgWKhHCPg_JsAhRqCBRctm_OxxlGZwNA)
-
-  
-
-**Follow Up questions:**
-
-  
-
-Try solving these questions by your own
-
-  
-
-**Que 1:**
-
-  
-
-![](https://lh3.googleusercontent.com/R3Zt3_kjUhul2FJOBYVXbb4DC_W54l7ITTQi-53itkrKjPHNiXofDNLr9h9DgvW1E75xPipvIfDSWGmwB0CPlg277KlcpubnVgVKyo_RAPnao1wwFVNZ2zKgJaM6ND-ilCwhMyZSLIUY5CcoZg)
-
-**Solution:**
-
-![](https://lh6.googleusercontent.com/0AcA6uYbxr7vrFe2pYPaw1eFC8W-dTnV6OqsQ03PzxbziO_tVGaqbtALnVF9EjgtsZoMGIJlkt-vojuZbPE9WHFSEXQbXC2-n9r5HaVQD2bk5n78dLLan-jdeax4TvToF1hddV1sQbAxsihgJWc)
-
-**Que 2:**
-
-  
-
-![](https://lh5.googleusercontent.com/3Mn8S6u0tfS0MMhEKwPCOZAJzSRDdbQUI5boqsaCeQ2xDRCH5tCV8KK08UBozXxH3yKTbe5jgS_pL9GwQa0MutJUfXJi2MNjmuTcZ7p3SHtWUtd8ERBSCnzZ8VZ3RUaKxV9iF6Bx8C7273qZeA)
-
-  
-  
-
-**Solution 2:**
-
-![](https://lh6.googleusercontent.com/5shQVhnmBOSZx15yAPlh7Ft7fs1_jml9jODrwswc1CMFddutWPX7sBHRCr75xuNHxefQe8UdCiSxW-jx_1WbKcrp55nid40pIK-2a2mwlctais1ud-JFBWNgKwOS6cXjsV964kKO5MvMW92Q0Fo)
-
-  
-  
-  
-  
-
-**Que 3:**
-
-![](https://lh6.googleusercontent.com/HBqULZsLgAKqLV3qtBgF0n6WlyJWGxqxpTVqP7x8xbhbVt7JtsGuIKeilQ6AlqCfwYx7VZpxGS8MnFihQqn56hCDW_WEduRlaAPxqy3vnNFvJDUpe6FVcvncaU6fl6ckkZfKUXap6CjPbZykPA)
-
-  
-
-**Solution 3:**
-
-  
-
-![](https://lh3.googleusercontent.com/HA6d8iySayI_GkgP5cvQ5WiLTHZh73tl4d_AzMxWuha_mVD74gWGR5R0wJz6aNxGmptZriiTwGiIySi-gti93uRB7CN_fqyi9qlzFNdW87TOGQYS-EUdgLrpLGkcj_HNz2pd6TrpZ7IfLl7zKLU)
-
-## 2. Search Algorithm
-
-  
-
-In this topic we will be studying on how to develop the techniques to get the best efficient algorithm for a problem by simply solving the puzzles.
-
->These puzzles will train your brain to develop your thinking on algorithm building in a right direction
+These puzzles will train your brain and develop your thinking on algorithm building in the right direction.
 
   
 
 **Problem Statement:**
 
-You have been given an array of integer elements and a number in a circle you have to identify whether this number is present in the array or not.If it is present then print the position of it in the array and if it is not then print -1.
+You have been given an array of integer elements and a number in a circle. Your task is to identify whether this number is present in the array or not. If it is present then print the position of it in the array and if not then print -1.
 
   
 
->Consider the following figure for better understanding of the question
+>Consider the following figure for better understanding of the question:
 
-![](https://lh3.googleusercontent.com/rnM0iTRf_J9gOkDIQFqDZpwYpW5cEa_Nfdb65JyiwiSdwuAHfpKe3yfTDVb7JPKCtuQzznRXfQAMMomkgjePxhx_uAMguWcjHPOOtG3mThN8OZ-0BtxDn29CJaknuzudnzW3axG0I61954vssA)
+![](https://lh5.googleusercontent.com/AVFfz4cDUIkWfUaYxH1aNUaCQNcKpH9UZvUxny1yFQBH6jQdJpn0QvoA8Ye1GAo6ROdReAIFImOXjdwMbiiO_7cm6m6_shRyqYryCH5VdKdafywO9irDv-yvBLG-JlEmwEQCH-UvRC2t-IkVFIFBGg)
 
-**Intuition for the approach**
+**Intuition for the approach:**
 
->Here we can see that if we start searching for the element from the middle of the array then we would end up missing some elements and it could be possible that our required element could lie in that missing part so to access all the elements we will begin our searching from the first element that is 0th index.
+Observe the figure above. If this was assigned to you using a piece of paper and pen, what would your approach be?
 
-  
-  
+You would simply spot the number to be searched for and count the position of it in the array starting from 0. We do not realise that in the process of simply spotting the number in the array, our brain is looking at each element of the array and comparing it with the number in the circle to see if they match.
 
-**Approach**
-
-Here we are asked to find the position of 7 in the given array, So first we will start comparing this element with the element which is kept at the 0th index in the array as the indexing used here is 0 based.
-
-  
-
-As we can see here that the element kept here is 5 and it is not equal to 7 then we will increment our value by 1 and will move to the 1st position now here as we can see 2 is present which is again not equal to 7 so we will again increment our value by 1 and move to the 2nd index where 19 is present which is again not equal to 7 So we will again increment our value by 1 and move to the third position.
-
-  
-
->Now as at the third position 7 is present which is equal to the given number so we will stop here and print the index of this position which is 3.
+If we began our search from any randomly chosen position in the array, it is inefficient and confusing to keep track of the elements already compared. You may also skip a few elements and get the incorrect result.
 
   
   
 
-**Follow up:**
+**Approach:**
+
+We start our search and comparison from the first element of the array and move forward.
+
+The number given in the circle is the input element to be searched for. We begin by comparing 7 with the element at the 0th index of the array.
 
   
 
-Try solving these questions it will increase your understanding and will force you to think in the right direction for building up an efficient algorithm.
+📌:pushpin: Remember that all arrays have their indexes values from 0 to n-1 where n is the size of the array.
 
   
 
-**Que 1.**
-
-  
-
-![](https://lh4.googleusercontent.com/fftqmWuStzoi36RBJ40HF6iDgsdukdr9QDRq7i1cD_eFAzH4ZTyhx2cIFluiDvYSpNv-3LdRnTdEFBgEV0bBKu2sk9P9eHIcwI8EDr1gABYBVHnzKapv4aGT8UaSlOXf6nMN5IIw38WvS8XYxg)
-
-  
-<details>
-  <summary>Check the solution!</summary>
-  
-   0
-  
-</details>
-
-
-  
-  
-  
-  
-  
-  
-
-**Que 2.**
-
-  
-
-![](https://lh3.googleusercontent.com/z8bMGsLykgySiLnc4eNsf9Ein7cuXZVoRRuPPkogz16x64t3tpi6e_tEqt5_GAQnDnXhloLIeyQV2gKzZ6PoO1aUledOHIRlgTNlU_ue5WK5JSCbD4yexOgfmVrZfKq2KtlVvX2zH4x8eWMT_A)
-
-  
-<details>
-  <summary>Check the solution!</summary>
-  
-   4
-  
-</details>
-
-  
-
-**Que 3.**
-
-  
-
-![](https://lh5.googleusercontent.com/kaYJ_bkC7RlRZmAc0u5j8gB3AJ2UsQaO2mR9c9BSthHj5cHkqC7ySuu1MUkv4TL7RDqpjSnYLXujU-f1FongmnUM49UGM-8TWxja_t5uXonDiHnk_b6hPFSaCOtmw8YOjYJfCSn5ZYkmHqhU1A)
-
-  
-  
-<details>
-  <summary>Check the solution!</summary>
-  
-   -1
-  
-</details>
+The element at the 0th index is 5 which is not equal to 7. Now we increment the value of our position by 1 to reach the element at index 1 which is the number 2. Observe again that 2 ≠ 7, so we keep incrementing the position index till we encounter 7 = 7. Since 7 is at index 3, we do not need to move further and simply print the position as 3.
 
   
   
 
-**Que 4.**
+**Follow up questions:**
 
   
 
-![](https://lh5.googleusercontent.com/jOo4v9Ai_3HMmwUzWZ0GMK84nxLE7v0aYymuNNFVbjwKnZTyILsfuh1LKtZ74nIlfmnjHCTP46m9JyRGHM7lx3xV_5JBnvOm_PXpae0Y6tKPpwE7kCcQD3JzSBDtoE6-eaEBXLXg8R4AYal4Tw)
-
-  
-  
-<details>
-  <summary>Check the solution!</summary>
-  
-   2
-  
-</details>
-
+Try solving the questions similar to the example discussed above. It will increase your understanding on how algorithms work and guide you to think in the right direction for building up an efficient algorithm.
 
   
 
-**Que 5.**
+**Question 1:**
 
-![](https://lh6.googleusercontent.com/bYboUpk8YKmA8fvOxyYxY-ByF8G3zxR0x2dqlbAVYQIsdGzJuuTB8Thoamd0qGHHO_i7dKa0USqVLpZcByu2DldBJwcs_yUk5S2dIGw662H-sucscswLtQZdmP5rRUSFKkBECuuNqPYjOD-g-g)
+  
+
+![](https://lh4.googleusercontent.com/tMAmvuPiKI26uxN_wcQCoYUBxZFgOrhxRtpVoyc1BYeCIcu026Bpnhpbsz3ZrDx56swzPQpEKUmRdlqrD--i2zWwOmNYd0-Wob_lniBjdvSqDs6Lxc_ZqId1lXnJCeV1U6vfq4miWSzNXSgcIlFjBA)
+
+  
+
+
+  
 
 <details>
-  <summary>Check the solution!</summary>
+  <summary>Check the Solution!</summary>  
   
-   -1
+The first occurance of the number in the circle is at index 0 so we print position as 0.
+
+</details>   
   
-</details>
-
-
-  
-
-**Que 6.**
-
   
 
-![](https://lh3.googleusercontent.com/em1CI1WA809dTM9kNA0ge6tDBWm1VwCwHMzy-4DnyQebNQFiL9W1cioOCmzi08QLXMdbhklxxUbeJip4o-1QVHjASKmdoL5qkW-zX3aABFyd9ieDCeudDVA7GJcieSDnncUCFHooqoDB7aIlxw)
+**Question 2:**
+
+  
+
+![](https://lh5.googleusercontent.com/DtWB6RVtK6XQjaP2yqmt-sCPl2X5JMF30ZpeMLyCdX1isZY-Hf8t6NIEI5qh2PaqImX1gihPrn8Mte_Q_oAtPSdgz7Ecc6iWT0OAHoRwWzs4blIABjysI_vVJAWOWcomJSDQT8LawSojGh7IjW-wTw)
+
+  
+
+  
 
 <details>
-  <summary>Check the solution!</summary>
+  <summary>Check the Solution!</summary>  
   
-   1
+The position of the required number is index 4.
+
+</details>  
   
-</details>
+  
 
+**Question 3:**
 
   
 
-**Que 7.**
+![](https://lh4.googleusercontent.com/HCI0Ac4dW3uihWnoELBfMqlsZhrzftjJk4lKtlul9vF6BYI0IubU6wuEsHyqBVVhbFDzbU7cCN-u2UHXs56CcsJIrfAYQvnMfGr5oqZ23i7K2Dww0F0ryGyu6eoj0loUurVDyZ8UWzx77m-z1qB3aA)
 
-![](https://lh4.googleusercontent.com/aZtcCE1zANzvj9WgyUhMIseNA7eO4Mx80E_C_qonbYraP9lN9A0PmX9LWiLkL0jMveEL7mGrDVqD7zbR6bLqS3NzCZVRWanHqnC-V81aRs0dq5Yi9zuoEOpe29yupPpauYbFGx01XjWLzHlVvg)
   
+  
+
 <details>
-  <summary>Check the solution!</summary>
+  <summary>Check the Solution!</summary>  
   
-   -1
-  
-</details>
+The number in the circle does not occur in the array so it’s position is index -1.
 
-
-
-  
-  
-  
-  
-  
-  
-  
+</details>  
   
   
   
 
-## 3. Bakuro Puzzles
+**Question 4:**
 
-These puzzles are binary versions of the popular Kakuro puzzle. The empty cells of the grid must be filled with the numbers 1, 2, 4, 8,16 …. and so on (i.e., only powers of 2). As with Kakuro, the numbers in each block in a column or row must add up to the number given in the clue above or to the left, respectively. No number can be used twice within any sum. The clues are given in both binary and decimal. The answers must also be written in both binary and decimal. Here is an example with a solution and the method to how to approach in the right direction for a given problem.
+  
+
+![](https://lh4.googleusercontent.com/ZI9tcQ3alUQNgDvqPapJqaH-5RONlqm27CfjnJfxfHWG9uRl9hXaugyCF1y0rXBXLWFncIWhiouH0tBWOBxBdn_q2kLvmWPQUeQ8Q9WlDZ6QsPni7wxL5Wp6fD2ZymrsbfnPxm5S5B6-JsZdbIc8Qg)
+
+  
+  
+
+<details>
+  <summary>Check the Solution!</summary>  
+  
+The position of the required number is index 2.
+
+</details>    
+  
+
+**Question 5:**
+
+![](https://lh3.googleusercontent.com/Qcecdehyq2pOsvOHKiZB6owmGt2CRr1s1Tu4gjx_rQJYxtwWStyXGjjKUBovSpsrOwkSAuTdUxLCB-hkhTWvrVd3R_RIn7Z8fupY5mqPhWP_jrqs0adw0JvjYxxgK1KSp9sz6PjrTlIAMQXhn577vA)
+
+
+<details>
+  <summary>Check the Solution!</summary>  
+  
+The number in the circle does not occur in the given array so its position is index -1.
+
+</details>    
+  
+
+**Question 6:**
+
+  
+
+![](https://lh5.googleusercontent.com/0Vuh8DRKCjmn83nrmqmHxDaAZGuKKX0waHnreOR_g9fjJ3uJarkQrlRD2-shVpq3mlRLytduzLMIqvT8vt8cHK2-ZnMTpWN9Uy8j50MwAjCBiCZS1iWUV87mEbqJIRd2Gpk9ezLZGx0CaD1AO-asEQ)
+
+
+<details>
+  <summary>Check the Solution!</summary>  
+
+The first occurrence of the required number is at index 1 so we print position as 1.
+
+  
+</details>   
+  
+
+**Question 7:**
+
+  
+
+![](https://lh6.googleusercontent.com/fC8gMnmorC-IdJiYUbfUSxHGKgf_d_B5akKYfwLTM3khdq8WcziHhPDl_komm0F_jml6Yz2bCaf33FeLCloaHWYaENQzq4CJLjEJbarKGjE8gkz4FwH-N99GBP_7L6xIEGFRE6_c4acAiYr3hiEZqw)
+
+
+<details>
+  <summary>Check the Solution!</summary>  
+
+The number to be searched for does not occur in the given array so we print its position as -1.
+
+  
+</details>  
+   
+  
+
+The above questions provided are good practice to keep your brains up and running. If you believe you need more practice on such questions, we urge you to explore further from the vast variety of questions available in books as well as the internet.
+
+Let’s move on to the last topic of this lesson (phew!).
+
+  
+
+## Bakuro Puzzles
+    
+
+These puzzles are binary versions of the popular Kakuro puzzle. The empty cells of the grid must be filled with the numbers 1, 2, 4, 8,16 …. and so on (i.e., only powers of 2). As is with Kakuro, in Bakuro puzzles the numbers in each block in a column or row must add up to the number given in the clue above or to the left, respectively. No number can be used twice within any sum. The clues are given in both binary and decimal form. The answers must also be written in both binary and decimal form. Here is an example along with its solution and the method to how to approach in the right direction for a given problem. You will get a better understanding of how the puzzle works when you solve the example with us. Let’s go 🚀  :rocket:
 
   
 
 **Problem statement:**
 
-Solve the given bakuro problem as shown below:
+Solve the given bakuro puzzle as shown below:
 
   
 
-![](https://lh4.googleusercontent.com/hbMAkAQlTR9-f8Ms00LZjZRrilEvbft2j7wwlg62s3lfQZMEnR6sH5HHzkowLkANl5T3_fxt4xn1Szlt8JACuJa40_kpXsd61WAAfW5cJdkO_TS6Xv1QEju50AmXOrJAFmd363aWz-5F7eqDVg)
+![](https://lh5.googleusercontent.com/G_ir1aW6b8IDveJyy5l6h1o1LvtHeUXbWiadjq82MsFMkgKZorsyjbn7UQeg_XrSAi7f-q1REcPSbs6F7Fta_QpWlLh_g2OQhiGAxYQsR95S6JSxO8BmDlFtUwKWnxbr1OpfTNW48lgs_XXXF2E1Dw)
 
   
 
-Now Let’s first Understand the basic Logical Intuition to solve this Problem:
+Let us start with understanding the basic logical intuition involved in solving this problem:
 
   
 
 **Intuition:**
 
-We can deduce the answer by noticing that the top row adds up to 3. The only way this can be done with the numbers 1,2,4 and 8 is with 1 + 2. Now the leftmost column must add up to 9, so it must be 1 + 8. The top left cell must hold a number from both those sums, which means it must be 1 (0001 in binary). Now if the top left cell holds 1, then the top right cell must hold 2 (0010 in binary) to make the row add up to 3.
+**Step 1:** We can deduce the answer by a simple observation that the top row adds up to 3. The only way this can be done with the numbers 1,2,4 and 8 is by performing 1 + 2.
+
+**Step 2:** Now the leftmost column must add up to 9, so the numbers must be split like 1 + 8.
 
   
 
-Similarly, the bottom right column must be 8 (1000) to make the leftmost column add to 9. That leaves the bottom right cell. It must hold 4 as the bottom row has to add up to 12 (8 + 4). That also makes the rightmost column add to 6 as required.
+**Step 3:** In steps 1 & 2 we found out what the numbers would be split into but this was done in no particular order. Let’s look at which number falls into which cell.
+
+The top left cell must hold a number from both those sums, which means it must be 1 (0001 in binary). Now if the top left cell holds 1, then the top right cell must hold 2 (0010 in binary) to make the row add up to 3.
 
   
+
+**Step 4:** Similarly, the bottom right column must be 8 (1000 in binary) to make the leftmost column add to 9. That leaves the bottom right cell which must hold 4 as the bottom row has to add up to 12 (8 + 4). That also makes the rightmost column add to 6 as required.
+
   
+
+And there you have it! We have successfully solved a Bakuro puzzle. As you move ahead and solve more such questions, you will see that the numbers fall into the right cells like chess pieces in a chess match.
+
   
 
 **Calculation Hint :**
 
   
 
-Binary numbers are just a way of making up numbers by adding powers of 2 (1, 2, 4, 8, …) together, just like decimal numbers involve adding powers of 10 (1, 10, 100, 1000) together.
+Binary numbers are a way of making up numbers that only consist of 0s and 1s by adding powers of 2 (1, 2, 4, 8, …) together.Similarly, decimal numbers involve adding powers of 10 (1, 10, 100, 1000) together.
 
   
 
-Have you noticed any patterns in the numbers? The answers that go in the grid only have a single 1 in their binary representation. The binary of the clue actually tells you which numbers you are looking for. 12 is 1100 in binary which says that 12 is made up of one 8 (1000) and one 4 (0100) with no 2s and no units added together. The row must therefore hold an 8 and a 4. Similarly, 9 is 1001 in binary: one 8 (1000), no 4, no 2 and one unit (0001) added together, so its column must hold an 8 and a 1.
+❓ :question: Have you noticed any patterns in the numbers?
+
+The answers that go in the grid only have a single 1 in their binary representation. The binary of the clue actually tells you which numbers you are looking for. 12 is 1100 in binary which says that 12 is made up of one 8 (1000) and one 4 (0100) with no 2s and no units added together. The row must therefore hold an 8 and a 4. Similarly, 9 is 1001 in binary i.e. one 8 (1000), no 4, no 2 and one unit (0001) added together, so its column must hold an 8 and a 1.
 
   
 
-So the Solution to this looks like this:
+So the solution to this looks like this:
 
   
 
-![](https://lh5.googleusercontent.com/pMFRFjQHPGkVYvIm9KUTiY2oaGAkRXgi5MrRK64gpZjQCX_6mvlXs2R51cB9gO0dIp1JFFi79j3HFteo4C3MMrL-rWDzI2zzWDHiRbrGC4a_ZeF5xtoLRNNy-Kb5OAybxjaHJgS9UVyIR60KNg)
+![](https://lh3.googleusercontent.com/ehjZCwIWFzLgiznd_52YZUNDgjNYqJWwYpqRot0LrAs0HKeu7Wjv_8VTjwzxCu8CTY4JR_A3MV4ZeaQXC3mUixpJP5kafyY9KIthUrt5zcpb06jCab2p36H21z4qIxH6LS3eqC5CiKIDd3L6RMv6Dw)
 
   
   
@@ -388,29 +441,22 @@ So the Solution to this looks like this:
 
   
 
-Now try solving these questions by your own:
+Now try solving the following questions for more practice:
 
   
-  
-  
-  
 
-**Que 1:**
-
-  
-  
-
-![](https://lh3.googleusercontent.com/iLM2QesDWeDa4ZFwKrJnz-cw0vtgXaJ9bugNBdzvIaD3HPYxsUKVVGWIMp9oTgrXDffJiQgZEdrNLIrSDlxqQp9TWc-5UXKQOrPWS6nCegfSjp7qdrumO-ypXCZ7wEKk3MxvmhFybqWWD76_VA)
+**Question 1:**
 
   
   
 
-**Solution 1:**
-
+![](https://lh5.googleusercontent.com/8FHv0lV8VXW2LKBTp22-xovk8CRwGHrwFX8uuyi1RG7veKmtYYRV41ci4H-ICB5RXG79uC_cFOW5YIlTC9uWwBnS-oIGTFvq02V8ynSGmVHpBr9cd2o6LXXJFwiM-MYf1hLe6YvLNL0JTswpEirviw)
 
   
-![](https://lh3.googleusercontent.com/9l5u6yLgJKLkMjO28vyq1ut2HXNZhklXlsWcIxBjDomvIUHAsR-J8ZyTBPdBFLkUgLiRlcFOlmQc4U7b_3R66y6t8jd0-8O6xrNrDg33iwyiFF1b_H9UUWt7hv5e1byq4IQtqkmMJwaIipJj_xQ)
   
+
+[Check the Solution!](https://lh3.googleusercontent.com/wkjTyhQa7mRbjlDoXzdq8XPPH_ltmGIuEzpFh7lWSuVoA_t2VZa5VsjWsg5IAXiqtVM1IyGyOgtsbBjwjPjNXJzo734GB07LnY9LulqSmffBJZeQR1ji2x8Ekh362LohOIKLqlglV2ntAxAlI7uPHes)
+
   
   
   
@@ -419,21 +465,17 @@ Now try solving these questions by your own:
   
   
 
-**Que 2:**
+**Question 2:**
 
   
 
-![](https://lh6.googleusercontent.com/AoBiYtzOcqRJutXcSWbOQsBK5hiQDtnwbgdPxDFCvYiQJvfZFlnBTJZarT8H4f_DNj0wgFGd31-PF_pSi_2HvrMHwApTRqr8Dy9fYbTgCl5tiMoG1G4u8tpyeEOr0j4FmiRv-hVT0FJwotPD2Q)
+![](https://lh3.googleusercontent.com/FfZuKNEKHNmaer4zvIvKSsoNTyB65ChaYYAaocG34DBeuWbwgLhi7d8Djrccj4K2JqYPi_UHo2PpWWgx0ZwAZh2cwLyohF5poLd0wh7XDIFNqgkgDSB9VnyLZ7Exs3dnNAe67lxDQEU5x05ZX8c8Kw)
 
   
   
   
 
-**Solution:**
-
-  
-
-![](https://lh3.googleusercontent.com/pJdgfZLta2KpyRfq_ioLUyfQ0AvwIn17AXz4Df75T7aaYz8GH2kPFTbyjDUwyFQKhVHkLVBO9RZYQz2SpVBzONQu9RKRvGuX6SH8qTdy30QliR24fLZnKyhYu2CbG3iLiMNOVFTtQiqmx3ecAtY)
+[Check the Solution!](https://lh3.googleusercontent.com/fxftVhyIxA4xgL1EN-89I0kTSYk-6VNu93h3L1TIP4LP8lIkAgialQsNQsxp2CzXu8kOruBqsgP6HvWF4VA4INvOPfrvX2wq7FmvPdlwezzPYcB85ZYEHbErLf03t4gGPTYsGX4eHo2L0QKC6YVT7Iw)
 
   
   
@@ -444,20 +486,18 @@ Now try solving these questions by your own:
   
   
 
-**Que 3:**
+**Question 3:**
 
   
 
-![](https://lh4.googleusercontent.com/3ErVX3VJ1TbyXp8JehklHyF_a6YBK9Ou9Rzm_8Gd3HLPTcDcRGLs6CW-GPTMyFNeNfS_Xb_MdX7QUHyslJ68_0cNP7jyCs8DXWazVlKJCVe8UXyLQ0vBDm_ZDSLTEs2qBTZoVZG1DpbB9Ug_yg)
-
-![](https://lh5.googleusercontent.com/ewPtHIogIOquHfsgy10eJuxtsHcqOw81JC8yhIad5C8ELinzi9CNmHEddhDltcaskISDNyDMuMwuAwIQw7m5rDaLbFSIRzy7gtDDHh52eqYIHelXCKgCNRIQnoUKUnaQudQSpxLSkj0zefMebcE)
-  
-  
-
-**Solution:**
+![](https://lh3.googleusercontent.com/osmvCXXs5p1QWA2oVg-oGk9YbmVNFwvtr85Pq8RGf2yp8j8QAPMH-2Lq4YxlyH1q_wcplaYru5kP1tEvGPsRZYB1fW2eJUaNU_5DA2wom2AxfdAk-FE8IoWYzOTRKNTaLTJGRg9A79NXBWXeY8s6Jw)
 
   
+  
 
+
+
+[Check the Solution!](https://lh3.googleusercontent.com/fta8JLsL3_v-nF33q4vQschAnoCPRqyqTNB-yv25vwLWt50kB6y9TNL47JA51kIJ8Zo1qXt08ZOpqAIO7Owi9CdPfzLBMlqUtA9zSlvB3UC37d_OMn24UO2bM6avxXWDuxmZT5RyN4KLl3KaJLEnbVI)
 
   
   
@@ -471,32 +511,35 @@ Now try solving these questions by your own:
   
   
   
+  
+  
 
-## End-of-the-lesson Assessment
+# End-of-the-lesson Assessment
 
   
 
-**Que 1:** In the following Cut hive Problem, find the value of a and b.
+**Question 1:** In the following Cut hive Problem, find the value of a and b.
 
+  
   
 
   
 
-Option A: 1,2
+a) 1,2
 
-Option B: 1,3
+b) 1,3
 
-Option C: 2,2
+c) 2,2
 
-Option D: None of the above
-
-  
-
-**Ans:** option B
+d) None of the above
 
   
 
-**Que 2:** How many iterations will be required if the size of the array in the searching algorithm is 10 and the number to be searched is not present in the array?
+**Answer:** Option (b)
+
+  
+
+**Question 2:** How many iterations will be required if the size of the array in the searching algorithm is 10 and the number to be searched is not present in the array?
 
   
 
@@ -511,15 +554,11 @@ Option D: None of the above
 
   
 
-**Answer:**
+**Answer:** Option (c)
 
   
 
-Option (C) 10.
-
-  
-
-**Que 3.** The binary Representation of number 15 is:
+**Question 3:** The binary representation of number 15 is:
 
 1.  1001
     
@@ -527,14 +566,8 @@ Option (C) 10.
     
 3.  0101
     
-4.  1111
-    
+4. 1111
 
   
 
-**Answer:**
-
-  
-
-Option (D) 1111
-
+**Answer:** Option (4)
