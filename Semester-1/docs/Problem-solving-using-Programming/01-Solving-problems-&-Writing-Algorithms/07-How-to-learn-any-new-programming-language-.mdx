@@ -1,1 +1,871 @@
-Logo
+
+# Lesson Objective
+
+In this lesson, we will be working with a beginner-friendly programming language called ‘LOGO’. We will understand the basic principles behind programming languages with the help of ‘LOGO’ so that you will be able to pick up any type of programming with relative ease in the future. This is a self-paced class. Happy Learning!
+
+## Why should you learn this language?
+
+-   You can consider a programming language as the medium through which you can instruct computing devices to perform tasks.
+    
+-   It is very important to learn various different programming languages because it is not possible to develop all types of software using only a single universal programming language as you may have inferred from the previous lesson.
+    
+-   In the software industry, a wide variety of programming languages and tools are used for various tasks according to the requirements.
+    
+-   Different programming languages excel in different areas like JavaScript in Websites, C++ in video games and Python in Artificial Intelligence.
+    
+
+  
+  
+
+📌  Most importantly, you are not learning a language here. You are getting introduced to how easily a language can be learnt with just logic and commands.
+
+## Introduction to the lesson
+
+You might already be aware of what a programming language is. Let’s revisit its definition:
+
+“A programming language is a vocabulary and set of grammatical rules for instructing a computer or computing device to perform specific tasks.”
+
+  
+  
+
+To understand the actual basic purpose a programming language serves we will be learning about LOGO which is a language specifically designed for educational purposes. It will let us understand that basic purpose without masking it behind complex features that are present in practical languages. You must have encountered it in the Kalvi Entrance test as well for drawing geometrical shapes. In this lesson we will cover the following topics:
+
+  
+
+1.  What is LOGO & why to learn LOGO?
+    
+2.  Programming in LOGO - Basic Commands
+    
+3.  LOGO Programs - Level 1
+    
+4.  LOGO Programs - Level 2
+    
+
+  
+
+![](https://media1.giphy.com/media/HklnYjODcYeSgmS7gz/giphy.gif?cid=ecf05e47x5c1d40tgdckili8gf7pf7izodl8fulc9i05pqcg&rid=giphy.gif&ct=g)
+
+  
+
+Source: [Language School GIF by Padel Viral Sport - Find & Share on GIPHY](https://giphy.com/gifs/viralpadel-language-school-one-way-HklnYjODcYeSgmS7gz)
+
+## What is LOGO?
+
+-   Logo is an easy and simple programming language. It was derived from another programming language LISP. Logo word is derived from the Greek word ‘logos’ meaning word or thought.
+    
+-   It was designed in 1967 by Wally Feurzeig, Seymour Papert, and Cynthia Solomon.
+    
+
+-   Logo shares a great deal with natural language in its construction and how it is learned. Not a natural language itself, Logo's similarities with natural languages are the reason it has been an instrument for learning and teaching.
+    
+
+  
+
+When we program in LOGO, we generally write commands to move the “turtle” located at the centre of the screen and the turtle draws lines and can be used to generate various patterns and diagrams.
+
+  
+
+**History of the turtle**
+
+In the 1940s turtles were educational robots designed for training purposes. Logo could control such a robotic turtle. The robot turtle walked around on a piece of paper. It held a pen and it drew lines as it walked around. Once monitors came in and became cheaper, LOGO controlled a pretend turtle robot on the screen instead of a real robot. Today the “turtle” is also represented as a small triangle or arrow head.
+
+## Why learn LOGO?
+
+-   A command is an instruction, which the computer can understand and execute.
+    
+-   In principle, the computer only understands very basic commands, which can then be combined to form more complicated instructions. Such a sequence of commands is called a computer program.
+    
+-   There are programs which have millions of commands. To keep track of such a complicated program, it is very important to approach the task of writing a program in a structured and well-thought-out manner. This is the reason we will explore programming with LOGO in this lesson.
+    
+
+  
+
+In short, we are going to learn logo because:
+
+-   Logo is a simple, easy and fun language.
+    
+-   It helps to get a good understanding of the basics of computer languages.
+    
+-   It also helps to understand how to approach programming problems.
+    
+
+  
+
+To run LOGO programs, you can use this online tool: [Online LOGO Interpreter](https://www.calormen.com/jslogo/#)
+
+  
+
+To run LOGO programs on your Windows PC, you can download the MSWLogo Setup Kit from the given link: [Download MSWLogo](https://www.softronix.com/logo_downloads/)
+
+  
+
+Programming in LOGO
+
+We use LOGO generally to move a ‘turtle’ present at the centre of the output screen. The turtle can also be represented as a triangle or arrow head.
+
+When we start, the turtle is at the centre of the graphic screen. This position of the turtle is called the home position.
+
+**Clean-up Commands**
+
+Before we start writing any of the commands, let’s learn what we can do in case any of our commands go wrong. You can type the full command or their abbreviation. For all of the commands their abbreviation will also be shared.
+
+  
+
+1.  CLEARSCREEN (or CS)
+    
+
+This command clears the screen and returns the turtle to its home position.
+
+2.  CLEARTEXT (or CT)
+    
+
+This command removes the text or commands from the command window and cleans it up.
+
+3.  BYE
+    
+
+This command is used to exit MSWLogo.
+
+**Basic Movement Commands**
+
+First we will learn simple drawing commands which will move the turtle backward, forward and turn it left or right. Each of these commands takes in one argument which is the number of steps to move or the angle with which to turn.
+
+  
+
+1.  FORWARD (or FD) x
+    
+
+-   It moves the turtle forward by x steps in the direction of its head.
+    
+
+-   Example: FD 50
+    
+
+2.  BACK (or BK) x
+    
+
+-   This command moves the turtle backward by x steps without moving its head.
+    
+-   Example: BK 50
+    
+
+3.  LEFT (or LT) x
+    
+
+-   This command rotates the turtle x degrees to the left.
+    
+-   Example: LT 90
+    
+
+4.  RIGHT (or RT) x
+    
+
+-   This command rotates the turtle x degrees to the right
+    
+-   Example: RT 90
+    
+
+  
+
+You can also type in a few commands in one command row, one after the other by putting a space between one command and the next. For ex, fd 50 lt 90. Logo is not a case sensitive language, this means that you can write the commands either in lowercase or uppercase as they symbolise the same instruction.
+
+  
+
+Now try the following problem using the commands discussed above. The solution is provided for you to check your answer.
+
+  
+
+**Problem 1:** Draw the following figure using the basic movement commands
+
+  
+![](https://lh3.googleusercontent.com/Obe9c19KtW1YQTXDrWiLrn5nMCnAxa6xn-wkWA3JSxp9rOhgS46KV3G0Y0vQ7RFTl6rCPolyVts2O4Ys5Uy7etyk4OtCTrY2Bm4LMAcxAI8X1n_RzjgXrE8ko2dnY9_T3a7pjGI_mYTC8ydpA4ysbA)  
+  
+  
+  
+  
+  
+  
+  
+
+**Hint:** Try remembering the angle properties of geometric shapes you studied in school
+
+  
+
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+fd 60 rt 72 fd 60 rt 72 fd 60 rt 72 fd 60 rt 72
+
+fd 60 lt 36
+
+fd 60 rt 72 fd 60 rt 72 fd 60 rt 72 fd 60
+
+  
+</details>     
+
+
+  
+  
+  
+  
+  
+  
+  
+![](https://lh5.googleusercontent.com/Rgp91u05UYR-dp3QEJu03Lh0TGs_pk3TqTfostXTgYDhP4Nx-plyYxPqvD491gK--sN36SacqSA7VXh3itDRLCVgibjnh0waoOSaCjkBXiIn905S_ZHpbig57AKLNW3v5UtX2-Xn2rmrrVmsOokeAQ)
+
+Here, we have chosen the length of one
+
+edge of the pentagon to be 60 units and we have used the angle properties of the pentagon to rotate the turtle left and right.
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+**Follow up questions**
+
+  
+
+**Q1.** Fill in the blanks so that a square of side length 50 units is drawn
+
+  
+  
+
+FD 50
+
+LT __
+
+FD 50
+
+LT 90
+
+FD 50
+
+__ 90
+
+__ __
+
+  
+  
+
+1.  60  LT  FD 90
+    
+2.  90  RT  FD 90
+    
+3.  90  LT  FD 50
+    
+4.  50  LT  FD 90
+    
+
+  
+ 
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+ C. 90  LT  FD 50
+
+  
+</details>     
+  
+
+
+  
+  
+
+**Q2.** Draw an Equilateral triangle of 50 units. Select the correct command?
+
+  
+
+1.  BK 50 LT 60 BK 50 LT 60 BK 50
+    
+2.  FD 50 LT 120 BK 50 LT 120 BK 50
+    
+3.  FD 50 LT 120 FD 50 LT 120 BK 50
+    
+4.  FD 50 LT 120 FD 50 LT 120 FD 50
+    
+
+  
+
+ 
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+
+ D. FD 50 LT 120 FD 50 LT 120 FD 50
+
+  
+</details>     
+  
+
+
+  
+
+**Q3.** Which of the following commands is used to clear the command window?
+
+  
+
+1.  CT
+    
+2.  CS
+    
+3.  BYE
+    
+4.  CST
+    
+
+  
+
+ 
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+A. CT
+
+  
+</details>     
+ 
+
+  
+  
+  
+  
+  
+
+**Pen Commands**
+
+The following are commands required to manage the pen while drawing.
+
+  
+
+1.  PENUP or PU
+    
+
+-   It lifts the “pen” from the screen so that moving the turtle doesn’t draw a line. It is helpful when you need to move to a different place to draw on the screen.
+    
+-   Example: PU
+    
+
+2.  PENDOWN or PD
+    
+
+-   Short for “pen down,” it puts the pen down so that moving the turtle draws a line.
+    
+-   Example: PD
+    
+
+3.  SETPENSIZE [x x]
+    
+
+-   This command is used to set the thickness of the pen to x pixels
+    
+-   Example: SetPenSize [5 5]
+    
+
+4.  SETCOLOR or SETPC colorno/[r g b]
+    
+
+-   This command is used to set the pen colour to RGB (Red, Green, Blue) values, where r, g, and b are numbers that range from 0 to 255. You can also set it to a colour no.
+    
+-   Example: SETCOLOR [255 0 0] or SETCOLOR 4
+
+![](https://lh5.googleusercontent.com/BZNJaM4CVWGx_hEwfUABS_AJm6HJLF1oslCwXG9o0yAmqWRJ_upelYf5ak9ZPzs8ydth3Q3sVPTwvuTx2qjiVcSH4uJ88JtP7d5Af16Iwvi5fwzbPOLsvivufaeDNLKD2LZ5K03VMV2a-RKop5GGFA)
+    
+
+  
+
+5.  PENERASE (or PE)
+    
+
+-   This command sets the pen mode to erase like it becomes an eraser. When the pen is moved, it will erase whatever is under it.
+    
+
+6.  PENNORMAL
+    
+
+-   This command sets the pen back to normal writing mode.
+    
+
+**Turtle Commands**
+
+1.  HT or HIDETURTLE
+    
+
+-   This command is used to hide the turtle. However any move commands will still leave a line.
+    
+
+2.  ST or SHOWTURTLE
+    
+
+-   This command is used to show the turtle. However any move commands will still leave a line.
+    
+
+3.  HOME
+    
+
+-   This command is used to bring the turtle back to its home position with its head also pointing in the default straight up position.
+    
+
+4.  SETXY x y
+    
+
+-   This command is used to set the absolute x and y position of the turtle. If the pen is down, it will draw a line from its previous position.
+    
+-   Example: setxy 50 100 takes the turtle to x=50 and y=100
+    
+
+  
+
+**Other Useful Commands**
+
+1.  ARC angle radius
+    
+
+-   Used to draw an arc where ‘angle’ is a number between 0-360 representing the angle that will be covered and ‘radius’ is the distance of the arc from the turtle’s head.
+    
+-   Example: arc 360 100 will draw a complete circle with a radius of 100
+    
+
+2.  LABEL “text
+    
+
+-   Typing this will take the ‘text’ (a string) and print it on the screen in the direction in which the turtle is heading. We have to first define the text with an open quotation mark.
+    
+
+3.  PRINT xyz
+    
+
+-   We can print details like the angle of the turtle’s head, coordinates, and a lot of other things. These are printed in the command tool itself or in the top-left of the online platform.
+    
+-   print xcor/ycor: This command print the x or y coordinates
+    
+-   print pos: This command prints the coordinates.
+    
+-   print heading: This command prints the exact direction (angle) the turtle is heading to.
+    
+
+  
+
+4.  SETH x
+    
+
+-   We can set the exact direction (angle) of the turtle’s head using this command
+    
+-   Example: seth 181
+    
+
+**Variables**
+
+-   Variables are used to store values that can be referred or used later. In computers there are different memory addresses which store values. Since it is difficult to remember addresses, users are allowed to give it a name of their choice. It is advised to use relevant names as it makes it easier for you as the programmer to remember as well as simpler for another programmer to read the code.
+    
+-   MAKE “xyz value
+    
+-   To create a variable and give it a value we use the MAKE command.
+    
+-   Example: make “size 100 will create a variable called “size”
+    
+-   Now to use size we use a colon (:) in front of it.
+    
+
+-   print :size  ; Value of size will be printed
+    
+-   fd :size  ;Turtle will move no. of units equal to value of size in forward direction
+    
+
+  
+
+**Arithmetic Operators**
+
+SUM (+)
+
+DIFFERENCE (-)
+
+QUOTIENT (/)
+
+PRODUCT (*)
+
+-   The addition (+), subtraction (-), division (/) and multiplication (*) operators can be used with any of the commands which take in number inputs. You need to put in space after minus otherwise it is treated as –ve number.
+    
+-   Example, print 10 -7 will give an error.
+    
+-   Example: PRINT 2 * 4 will print 8 in the command window or top-left
+    
+
+**Comments**
+
+-   If we need to add any comments to our program which are not to be read by LOGO but are for our understanding then we use semicolons. Anything that is typed after ; is ignored by LOGO.
+    
+-   Example: PRINT 2 * 4  ;This will multiply the numbers
+    
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+Let’s try some problems now and see if you can apply and use the commands we have discussed above.
+
+  
+
+**Problem 2:** Draw the following shape using commands you know till now
+
+  
+![](https://lh6.googleusercontent.com/zMej9n9N2xzhMHughVtbv8jG8saJwGMLCzUMTeU4ZhQfUHT8xgg9M35gSsBHynRfb8shfFfcplLBSuVdwUpPkWi4bzysYTg3cu5mZAcx0e74Hy6PKoqVTuNfVXQ1UyF6kpejyNKc5Var2tTEPAZdGw)  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+**Hint:** Try adjusting the radius of the arcs and also adjust the length of the straight edges to draw a figure similar to the given one. Remember that there can be multiple ways to draw the same figure too.
+
+  
+  
+<details>
+  <summary>Check the Solution!</summary>  
+    
+
+setpensize 15
+
+setpencolor 4  // code for red colour
+
+arc 360 50     // circle of radius 50 in the centre
+
+fd 100         // move 100 units(double the radius) from the centre of the circle
+
+rt 180         // reverse direction
+
+fd 200         // move 200 units to complete the centre line and circle.
+
+rt 90
+
+fd 200
+
+rt 90
+
+fd 100         // move at the centre of the left endline
+
+arc 180 80     // draw arc of 80 unit radius to represent 3-pointer lines
+
+fd 100
+
+rt 90
+
+fd 400
+
+rt 90
+
+fd 100
+
+arc 180 80
+
+fd 100
+
+rt 90
+
+fd 200
+
+  
+  
+</details>     
+
+
+
+**Problem 3:** Try drawing the following figure using logo programming![](https://lh3.googleusercontent.com/JQzhTY-S9MIFYpjVFvaMgD2sJD0TsjE2FfzHmMJtO2LWWyMVVdX1ycKzCseC72q5EDEPJsV2UKi64BiyX_QPxakVNwR2uJxZTTAtLafV8fg-bdzB9Jc9XJL_4OPNS_BCajp2tc-jbCcP5GUJ6LDEDA)
+
+  
+  
+  
+
+**Hint:** Use penup and pendown commands and draw step by step by keeping track of the orientation of the turtle
+
+  
+  
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+cs                                   // 1
+
+setpensize 3                         // 2
+
+pu fd 20                             // 3
+
+pd fd 60 pu fd 20                    // 4
+
+rt 180 arc 270 20                    // 5
+
+lt 90 fd 20 pd fd 60 pu fd 20        // 6
+
+lt 180 arc 270 20                    // 7
+
+lt 90 fd 20 pd fd 60                 // 8
+
+pu fd 20 lt 180                      // 9
+
+pd arc 270 20                        // 10
+
+lt 90 pu fd 20 pd fd 60              // 11
+
+pu fd 20 lt 180                      // 12
+
+pd arc 270 20                        // 13
+
+  
+</details>     
+
+  
+
+// After line 4  // After line 60  // After line 10  // After line 13
+
+![](https://lh5.googleusercontent.com/OGM-HJBy2K9GirrK2Hk1gGAer_lvgdJkdLSvA7TKKN0zpNTW3yvHfqxNLaxSQjuey9Bz4jRtzkolDUM35-UnG_U0cBy08b2qenD8jWCvRnkn4Pyv7MGb0EPj3K6Mt5ZFIBQaXIyw08QoEe2RxkOvYg)
+
+![](https://lh4.googleusercontent.com/VDraH7f7Uxia0t5viJRj1uDWLsR7rm27bzuhn4vZXA0y3qmFwy94eudGJ6FAkQt9AXM0DZUrC-Tz77BXomy8bQO588WD4Np1ecsD703cXptvSJh6Pa7yz-CotkhJ6c7nUrHwTi1vNVz6T_SobiHFsA)
+
+![](https://lh3.googleusercontent.com/n92ZYw4KQfLaXrof_Ws85Fh6bftTMt15jMwlevCC3uJJUGcLOFbxvpJDy1AXzDhykYok37PGOgLE8uieGB_Tf0q84fZSjrXG-QEygX0yW9xK6LDFw2yrSPt1lXX1qT5v78DdXSP8l8uFNIaxCL_png)
+  
+![](https://lh5.googleusercontent.com/Wkj5OsUdZaxyp4ly_Jlz0c4vClNuIYHCdY5nEy6G6QYT0-daLfCMMDecP3526xqYC-_ROHQUOH1n0WF7u7f1iB9tSmvbzH2-Stka77fGRvCeDe8AQh46AxEW2-yeSbp6CzL6HhIITLdwjK_6qqpyGA)  
+  
+  
+  
+  
+  
+  
+  
+  
+
+Note that the arc is drawn starting from the turtle’s head and the turtle remains at the same orientation after drawing the arc. We are here drawing arcs of 270 degrees and the radius id 20 so this figure is just a square of sides of 100 units (in this example) with 4 circles of radius 20 units drawn with their centres on the vertices of the square.
+
+  
+
+**Follow up questions**
+
+  
+
+**Q1.** Which set of commands can be used to draw the following figure?
+
+  
+![](https://lh4.googleusercontent.com/HulJaRef4TVK6S6B2BCdj1AZEwcLhR1XrFbWWSFJUWu3eu3XO2z8gH1PLqlD6acNkaA1wy0jocgJ0e63gyJxwbRgQYDbWS3RTpc1ylf33V3-2uj69RqxDAJ1mPlKj6NiHdsaKwVh7AK3NxOGim8swhg)  
+  
+  
+  
+  
+  
+  
+  
+
+1.  rt 60 fd 100 rt 120 fd 100 rt 120 fd 100 rt 150 fd 87
+    
+2.  rt 60 fd 100 rt 120 fd 100 rt 120 fd 100 rt 150 fd 100
+    
+3.  rt 60 fd 100 rt 60 fd 100 rt 60 fd 100 rt 60 fd 87
+    
+4.  None of the above
+    
+
+  
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+The answer is option A
+
+  
+</details>     
+  
+
+
+**Q2.** Which command is used to create variables in LOGO?
+
+1.  MAKE var value
+    
+2.  SET “var value
+    
+3.  CREATE “var value
+    
+4.  MAKE “var value
+    
+
+  
+  
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+ The answer is option D
+
+  
+</details>     
+  
+
+
+  
+
+**Q3**: Which set of commands can be used to get the following output?
+
+  
+![](https://lh3.googleusercontent.com/PI4siseH4Vp7OLiLbPwnxRyTeVYKEyM1WO2ZM2ERupysYUGYmkn074ih_jDEbUKYDMSu5MQg61JhUmX5KFjX_5tyleZOoHUTrr78AGGEZjskHZYkOkG7paNM7TIVJr8AmmpMLxjB3RQ5NKTOObjITP8)  
+  
+  
+  
+  
+  
+  
+
+1.hideturtle
+    
+
+label "LOGO rt 90 label "LOGO rt 90 label "LOGO rt 90 label "LOGO rt 90
+
+  
+
+2.ht
+    
+
+rt 90 label "LOGO rt 90 label "LOGO rt 90 label "LOGO rt 90 label "LOGO
+
+  
+
+3.(a) & (b) both
+    
+
+  
+
+4.Text can’t be printed in the output screen using LOGO
+    
+
+  
+  
+  
+<details>
+  <summary>Check the Solution!</summary>  
+  
+
+  The answer is option C
+
+  
+</details>     
+
+
+We now think you are ready to try the end of the lesson assessment. Keep it up!
+
+  
+
+![](https://media4.giphy.com/media/dVd8zPWXLz97fV41zf/giphy.gif?cid=ecf05e472yxaw84qf3s4pe1vco578q134gskeatyjettdova&rid=giphy.gif&ct=g)
+
+Source: [Oscillating Schitts Creek GIF by CBC - Find & Share on GIPHY](https://giphy.com/gifs/cbc-schitts-creek-dVd8zPWXLz97fV41zf)
+
+## End of the lesson assessment
+
+  
+
+**Q1.** LOGO uses what kind of front end for the users?
+
+  
+
+A. Command user interface
+
+B. Graphical user interface
+
+C. Hybrid user interface
+
+D. Dual user interface
+
+  
+
+**Answer :** B. Graphical user interface
+
+  
+
+**Q2.** Select the option which will form a hexagon of side length 60
+
+![](https://lh6.googleusercontent.com/AISJOGhUsuC0fZd2NGxi7GvllpaQH_4_zXMW8i3Oe0PMQiuERkydyy-gIuguh-x8McgUAAq2ZQ1QAOzteehy7iS_foyJXP1PHRQSMlCwxdS28hp7T8v7CkGURmjG1jWd1vLNdq8ysJgyzDaTsWOr-MY)
+
+  
+
+1.  lt 90 fd 60 rt 60 fd 60 rt 60 fd 60 rt 60 fd 60 rt 60 fd 60 rt 60 fd 60
+    
+2.  rt 90 fd 60 rt 60 fd 60 lt 60 fd 60 rt 60 fd 60 rt 60 fd 60
+    
+3.  lt 90 fd 60 rt 60 fd 60 rt 60 fd 60 rt 60 fd 60 lt 60 fd 60 rt 60
+    
+4.  lt 90 fd 60 rt 60 fd 60 lt 60 fd 60 rt 60 fd 60 lt 60 fd 60 rt 60 fd 60
+    
+
+  
+
+**Answer :** A. lt 90 fd 60 rt 60 fd 60 rt 60 fd 60 rt 60 fd 60 rt 60 fd 60 rt 60 fd 60
+
+  
+
+**Q3.** Which of the following is an invalid command in logo?
+
+  
+
+1.  setpensizeat 15
+    
+2.  setpencolor 4
+    
+3.  arc 360 50
+    
+4.  seth 181
+    
+
+  
+
+**Answer :** A. setpensizeat 15
+
+  
+
+**Q4.** Colour code for tan in logo is ?
+
+1.  5
+    
+2.  7
+    
+3.  3
+    
+4.  9
+    
+
+  
+
+**Answer :** A. 9
+
+  
+
+**Q5.** The correct syntax of the LABEL command is ?
+
+  
+
+1.  LABEL “text
+    
+2.  LABEL “text’
+    
+3.  LABEL ‘text’
+    
+4.  LABEL ‘text
+    
+
+  
+
+**Answer :** A. LABEL “text
